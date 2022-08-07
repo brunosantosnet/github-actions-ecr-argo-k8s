@@ -46,7 +46,7 @@ jobs:
       - name: update k8s
         run: |
           cd k8s
-          kustomize edit set image app=$REGISTRY/$REGISTRY_ALIAS/$REPOSITORY:${{ github.sha }}
+          kustomize edit set image app=public.ecr.aws/l2a4m1h7/repo-images:${{ github.sha }}
           cat kustomization.yaml
 
       - name: commit

@@ -7,4 +7,4 @@ resources:
 images:
 - name: app
   newName: public.ecr.aws/l2a4m1h7/repo-aws
-  newTag: 4e9e67430f1e19196911b9dc7679dcca17c4fba5
+  newTag: be7092bdd68f58be002670d23481e8c2e3926fa1

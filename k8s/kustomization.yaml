@@ -1,0 +1,10 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+- deployment.yaml
+- service.yaml
+
+images:
+- name: app
+  newName: public.ecr.aws/l2a4m1h7/repo-aws
+  newTag: 4e9e67430f1e19196911b9dc7679dcca17c4fba5
